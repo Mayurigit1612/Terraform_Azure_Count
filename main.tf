@@ -12,7 +12,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg"{
-    count = length(var.rg_names)
-    name = var.rg_names [count.index]
-    location = "east us"
+    count = length(var.location)
+    name = "rg-${var.location[count.index]}"
+    location = var.location[count.index]
 }
