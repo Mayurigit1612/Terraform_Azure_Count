@@ -1,3 +1,3 @@
 variable "location"{
-    default = ["eastus","westus","centralus"]
+    default = ["eastus","westus","rg3"]
 }
